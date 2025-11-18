@@ -1,0 +1,1255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakura Ramen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Economica:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .myBody {
+            margin: 0%;
+        }
+
+
+        .raleway {
+            font-family: "Raleway", Regular;
+        }
+
+
+        .Economica {
+            font-family: Economica;
+
+        }
+
+
+        .raleway-uniquifier> {
+            font-family: "Raleway", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: <weight>;
+            font-style: normal;
+        }
+
+
+        .container-header {
+            height: 100vh;
+            background-image: url("./img/hero_bg.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: bottom;
+            object-fit: cover;
+            padding-top: 200px;
+            box-sizing: border-box;
+        }
+
+
+        .h1 {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+
+
+        .size1 {
+            color: white;
+            font-family: raleway, regular;
+            font-weight: bold;
+            font-size: 96px;
+            justify-content: center;
+            margin: 0 0 4px 0;
+            padding-top: 60px;
+        }
+
+
+        .size2 {
+            display: flex;
+            justify-content: center;
+            font-size: 24px;
+            font-family: raleway, regular;
+            color: white;
+            margin: 5px;
+        }
+
+
+        .navbar {
+            position: absolute;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            left: 0%;
+            right: 0%;
+            top: 0%;
+            padding-top: 20px;
+            font-size: 24px;
+            font-family: "Raleway"
+        }
+
+
+        .logo-sakura {
+            display: flex;
+            width: 64px;
+            height: 64px;
+            margin-left: 112px;
+            margin-top: 20px;
+        }
+
+
+        .nav-menu {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+
+        .nav-item {
+            color: white;
+            text-decoration: none;
+            font-size: 24px;
+        }
+
+        .nav-item:hover {
+            text-decoration: underline;
+            color: rgb(230, 95, 158);
+
+        }
+
+        .locations {
+            color: white;
+            text-decoration: none;
+            font-size: 24px;
+        }
+
+
+
+        .about {
+            color: white;
+            text-decoration: none;
+            font-size: 24px;
+            font-family: raleway;
+        }
+
+
+
+        .button {
+            left: 0px;
+            right: 0px;
+            top: 10px;
+            color: rgb(255, 255, 255);
+            border: none;
+            display: inline-flex;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            font-size: 24px;
+            background-color: #9F0908;
+            border: 2px solid #ffffff;
+            border-radius: 10px;
+            margin-right: 200px;
+        }
+
+
+        .phone-logo {
+            width: 30px;
+            height: 30px;
+            margin-right: 8px;
+            margin-left: 5px;
+            padding-top: 5px;
+            padding-left: 5px;
+        }
+
+
+        .number {
+            display: flex;
+            justify-content: center;
+            padding-right: 20px;
+            padding-bottom: 2px;
+            font-size: 24px;
+            font-family: raleway;
+            text-decoration: none;
+            cursor: pointer;
+            color: white;
+            padding-right: 10px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        .number1 {
+            display: flex;
+            align-items: center;
+            margin-right: 7px;
+        }
+
+
+        .number1:hover {
+            color: #c95555;
+            text-decoration: underline;
+        }
+
+        .h2 {
+            display: flex;
+            justify-content: center;
+            font-size: 80px;
+            font-family: raleway;
+            font-weight: bold;
+            color: #9F0908;
+            padding-top: 120px;
+        }
+
+
+
+        .pics {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding-top: 64px;
+            padding-bottom: 64px
+        }
+
+
+        .pic1 {
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .img1 {
+            width: 128px;
+            height: 120%;
+        }
+
+
+        .text1 {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            font-size: 56px;
+            font-family: economica;
+            font-weight: bold;
+            margin-top: 16px;
+        }
+
+
+
+        .pic2 {
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .img2 {
+            width: 128px;
+            height: 120%;
+        }
+
+
+        .text2 {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            font-size: 56px;
+            font-family: economica;
+            font-weight: bold;
+            margin-top: 16px;
+        }
+
+
+
+        .pic3 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 128px;
+            height: 100%;
+
+        }
+
+
+        .img3 {
+            width: 128px;
+            height: 120%;
+        }
+
+
+
+        .text3 {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            font-size: 56px;
+            font-family: economica;
+            font-weight: bold;
+            margin-top: 16px;
+        }
+
+
+        .ourmenu {
+            background-image: url(./img/section_our_menu_bg.jpg);
+            background-repeat: no-repeat;
+            background-position: bottom;
+            object-fit: cover;
+            padding-bottom: 120px;
+            padding-top: 120px;
+
+        }
+
+        .h3 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #9F0908;
+            font-family: raleway;
+            font-weight: bold;
+            font-size: 80px;
+        }
+
+        .menu1 {
+            display: flex;
+            align-items: center;
+            padding-top: 64px;
+        }
+
+
+        .plate1 {
+            display: flex;
+            justify-content: flex-start;
+            padding-left: 80px;
+            width: 352px;
+            height: 352px;
+        }
+
+        .text_menu1 {
+            display: flex;
+            font-family: economica;
+            font-size: 56px;
+            font-weight: bold;
+        }
+
+        .table_menu1 {
+            display: flex;
+            margin-top: 15px;
+            font-family: raleway;
+            font-size: 32px;
+            font-weight: bold;
+            color: #675E54;
+        }
+
+        .menu_price {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            padding-left: 100px;
+        }
+
+        .menuprice1 {
+            padding-left: 200px;
+            padding-top: 16px;
+        }
+
+        .menuprice2 {
+            padding-left: 200px;
+            padding-top: 8px;
+        }
+
+        .menuprice3 {
+            padding-left: 200px;
+            padding-top: 8px;
+        }
+
+
+        .menu2 {
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+            padding-right: 112px;
+        }
+
+
+        .plate2 {
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+            width: 352px;
+            height: 352px;
+            padding-top: 56px;
+        }
+
+
+        .text_menu2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: economica;
+            font-size: 56px;
+            font-weight: bold;
+            padding-right: 200px;
+        }
+
+
+
+        .menu_item {
+            display: flex;
+            align-items: center;
+            flex-direction: row-reverse;
+        }
+
+
+
+        .menuprice4 {
+            padding-left: 200px;
+            padding-top: 16px;
+        }
+
+
+
+        .menuprice5 {
+            padding-left: 200px;
+            padding-top: 8px;
+        }
+
+
+
+        .menuprice6 {
+            padding-left: 200px;
+            padding-top: 8px;
+        }
+
+        .findus {
+            display: flex;
+            justify-content: center;
+            font-family: raleway;
+            font-weight: bold;
+            color: #9F0908;
+            font-size: 80px;
+        }
+
+        .section3 {
+            display: flex;
+            justify-content: center;
+        }
+
+
+        .h4 {
+            display: flex;
+            margin-bottom: 20px;
+            font-family: raleway;
+            font-size: 80px;
+            color: #9F0908;
+            font-weight: bold;
+        }
+
+
+        .loc {
+            display: flex;
+            justify-content: center;
+        }
+
+
+        .imgmap {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 30px;
+            height: 100%;
+        }
+
+        .street {
+            display: flex;
+            font-family: raleway, regular;
+            font-size: 24px;
+            margin-left: 10px;
+
+
+        }
+
+
+        .googlemaps {
+            display: flex;
+            justify-content: center;
+            padding-top: 64px;
+        }
+        .fullmap {
+            display: flex;
+            justify-content: center;
+            width: 100vw;
+            height: 700px;
+        }
+
+
+        .footer {
+            margin-bottom: 0px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #0A141E;
+            padding-left: 80px;
+            height: 100px;
+
+        }
+
+
+        .sakurafooterlogo {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            height: 44px;
+        }
+
+
+        .sakuratext {
+            display: flex;
+            justify-content: flex-start;
+            font-family: raleway;
+            font-weight: bold;
+            font-size: 44px;
+            margin-left: 30px;
+            color: white;
+        }
+
+        .socialmedia {
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+            gap: 20px;
+            padding-right: 100px;
+
+        }
+
+        .tripadvisor {
+            display: flex;
+            width: 40px;
+            height: 40px;
+        }
+
+        .facebook {
+            display: flex;
+            width: 40px;
+            height: 40px;
+        }
+
+        .instagram {
+            display: flex;
+            width: 40px;
+            height: 40px
+        }
+
+        .sakuralogoalone {
+
+            display: flex;
+            justify-content: flex-start;
+            width: 43px;
+        }
+         @media(max-width: 1280px) {
+     
+        .logo-sakura {
+            margin-left: 20px;
+            margin-top: 5px;
+            width: 64px;
+            height: 64px;
+        }
+        .nav-menu {
+            padding-right: 20px;
+        }
+        .number1 {
+            justify-content: flex-end;
+            font-size: 20px;
+        }
+        .button {
+            justify-content: flex-end;
+            margin-right: 0px;
+        }
+        .phone-logo {
+            width: 25px;
+            height: 30px;
+        }
+        .number {
+            padding-top: 8px;
+            padding-bottom: 8px;
+            padding-left: 8px;
+            padding-left: 8px;
+        }
+    
+        .size1 {
+            font-size: 72px;
+            font-weight: bold;
+        }
+        .size2 {
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            margin-block-start: 0;
+            margin-block-end: 0;
+            }
+
+        .h2 {
+            padding-top: 96px;
+            font-size: 64px;
+            font-weight: bold;
+        }
+        .pics {
+            padding-top: 48px;
+            padding-bottom: 96px;
+        }
+        .img1 {
+            width: 112px
+        }
+        .img2 {
+            width: 112px
+        }
+        .img3 {
+            width: 112px
+        }
+        .text1 {
+            margin-top: 8px;
+            font-size: 32px;
+        }
+        .text2 {
+            margin-top: 8px;
+            font-size: 32px;
+        }
+        .text3 {
+            margin-top: 8px;
+            font-size: 32px;
+        }
+        .ourmenu {
+            padding-top: 96px;
+            padding-bottom: 96px;
+            align-items: center;
+        }
+        .h3 {
+            font-size: 64px;
+            font-weight: bold;
+        }
+        .menu1 {
+            padding-top: 0px;
+        }
+        .plate1 {
+            width: 352px;
+            height: 352px;
+            justify-content: center;
+        }
+        .menuprice1 {
+            padding-left: 100px;
+        }
+        .menuprice2 {
+            padding-left: 100px;
+        }
+        .menuprice3 {
+            padding-left: 100px;
+        }
+        .menuprice4 {
+            padding-left: 100px;
+        }
+        .menuprice5 {
+            padding-left: 100px;
+        }
+        .menuprice6 {
+            padding-left: 100px;
+        }
+        .menu_price {
+            padding-left: 24px;
+          
+        }
+        .text_menu1 {
+            font-size: 32px;
+            font-weight: bold;
+        }
+        .table_menu1 {
+            font-size: 24px;
+            margin-top: 16px;
+            text-align: left;
+        }
+        .menu2 {
+            padding-right: 0px;
+            justify-content: center;
+        }
+        .menu_price2 {
+            padding-left: 0px;
+            align-items: center;
+        }
+        .plate2 {
+            width: 352px;
+            height: 352px;
+            padding-top: 32px;
+            padding-right: 10px;
+           
+        }
+        .menu_item {
+            padding-bottom: 32px;
+        }
+        .text_menu2 {
+            font-size: 32px;
+            font-weight: bold;
+            justify-content:left;
+        }
+        .h4 {
+            margin-top: 96px;
+            font-size: 64px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        .street {
+            font-size: 20px;
+        }
+        .imgmap {
+            width: 25px;
+        }
+        .googlemaps {
+            padding-top: 48px;
+        }
+        .footer {
+            height: 144px
+        }
+        .loc {
+            padding-right: 0;
+            margin-right: 0;
+        }
+        
+    }
+
+        @media(max-width: 990px) {
+           
+
+            .nav-menu {
+                padding-right: 30px;
+                padding-top: 0px;
+                align-items: center;
+            }
+            .navbar {
+                align-items: center;
+            }
+            
+            .button {
+                margin-right: 0;
+                justify-content: flex-end;
+                align-items: center;
+                
+            }
+
+         .logo-sakura {
+            margin-left: 20px;
+         }
+
+            .size1 {
+                text-align: center;
+                font-size: 72px;
+                padding-top: 0;
+                font-weight: bold;
+                font-family: raleway;
+            }
+
+            .container-header-img {
+                background-size: contain;
+            }
+        }
+
+    @media(max-width: 635px) {
+        .section2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+      .h2 {
+        text-align: center;
+      }
+
+    }
+
+    @media(max-width: 650px) {
+        .pics {     
+            flex-direction: column;
+        }
+    }
+
+    @media(max-width: 768px) {
+        .menu1 {
+            align-items: center;
+            flex-direction: column;
+        }
+        .menu_price {
+            padding-top: 30px;
+            font-size: 40px;
+            text-align: center;
+            padding-left: 0;
+        }
+        .h3 {
+            text-align: center;
+        }
+        .plate1 {
+            align-items: center;
+            padding-left: 0;
+        }
+        .menuprice1 {
+            padding-left: 30px;
+        }
+        .menuprice2 {
+            padding-left: 30px;
+        }
+        .menuprice3 {
+            padding-left: 30px;
+        }
+        .menu_item {
+            flex-direction: column;
+        }
+        .ourmenu {
+            display: flex;
+            flex-direction: column;
+              
+        }
+        .menu2 {
+            padding-left: 0px;
+            padding-right: 0;
+            align-items: center;
+        }
+      .plate2 {
+        display: flex;
+        align-items: center;
+       
+      }
+      .text_menu2 {
+        text-align: center;
+        padding-right: 0;
+        padding-top: 30px;    
+      }
+
+      .menuprice4 {
+            padding-left: 30px;
+        }
+        .menuprice5 {
+            padding-left: 30px;
+        }
+        .menuprice6 {
+            padding-left: 30px;    
+    }
+
+    .menu_price2 {
+        text-align: center;
+    }
+
+    .text_menu1 {
+        text-align: center;
+        padding-right: 0;
+    }
+}
+@media(max-width: 720px) {
+       .nav-item {
+            display:none;
+        }
+}
+    @media (max-width:450px) {
+        .h4 {
+            text-align: center;
+        }
+        .loc {
+            text-align: center;
+        }
+    }
+    @media(max-width:681px) {  
+        .socialmedia {
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 30px;
+        }
+        .sakurafooterlogo {
+            display: none;
+            
+        }
+        .sakuralogoalone {
+            display:flex;
+            justify-content: flex-start;   
+            padding-left: 20px;   
+        }
+
+        .footer {
+            padding-left: 0;
+        }
+    }
+    @media(min-width:682px){
+        .sakuralogoalone {
+            display: none;
+            
+        }
+
+    }
+    @media(max-width: 375px) {
+        .logo-sakura {
+            width: 40px;
+            height: 40px;
+        }
+        .nav-menu {
+            padding-top: 0px;
+            padding-right: 0px;
+            padding-left: 0;
+            align-items: center;
+        }
+        .navbar {
+            align-items: center;
+            
+        }
+
+        .button {
+            width: 90%;
+        }
+        .phone-logo {
+            padding-left: 20px;
+            margin-left: 10px;
+            width: 25px;
+            height: 25px;
+        }
+        .number {
+            font-size: 16px;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+        .h1 {
+            display: flex;
+            justify-content: center;  
+            padding-top: 50px;      
+        }
+        .size1 {
+            font-size: 44px;
+            font-weight: bold;
+        }
+        .size2 {
+            font-size: 16px;
+        }
+        .h2 {
+            padding-top: 72px;
+            font-size: 40px;
+        }
+        .img1 {
+            width: 112px;
+        }
+         .img2 {
+            width: 112px;
+        }
+         .img3 {
+            width: 112px;
+        }
+        .text1 {
+            font-size: 38px;
+            margin-top: 8px;
+            margin-bottom: 32px;
+        }
+        .text2 {
+            font-size: 38px;
+            margin-top: 8px;
+             margin-bottom: 32px;
+        }
+        .text3 {
+            font-size: 38px;
+            margin-top: 8px;
+        }
+        .pics {
+            padding-bottom: 72px;
+            padding-top: 72px;
+        }
+        .ourmenu {
+            padding-top: 72px;
+            padding-bottom: 72px;
+            align-items: center;
+        }
+        .h3 {
+            font-size: 40px;
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
+        .menu1 {
+            padding-top: 0;
+        }
+        .plate1 {
+            width: 343px;
+            height: 343px;
+            display: flex;
+          
+        }
+        .menu_price {
+            padding-top: 16px;   
+        }
+
+        .text_menu1 {
+            font-weight: bold;
+            font-size: 32px;
+            margin-top: 0;   
+        }
+
+        .table_menu1 {
+            font-size: 24px;
+            text-align: start;
+            margin-top: 8px;
+        }
+
+        .menuprice1 {
+            padding-left: 100px; 
+        }
+
+        .menuprice2 {
+            padding-left: 100px; 
+        }
+
+        .menuprice3 {
+            padding-left: 100px; 
+        }
+      
+        .plate2 {
+            padding-top: 32px;
+            width: 343px;
+            height: 343px;
+            align-items: center;
+        }
+       
+        .text_menu2 {
+            font-size: 32px;
+            font-weight: bold;
+            margin-top: 0;
+            padding-top: 16px;  
+            justify-content: flex-start;
+        }
+        .table_menu1 {
+            font-size: 24px;
+            text-align: start;
+            margin-top: 8px;
+        }
+        .menuprice4 {
+            padding-left: 80px; 
+        }
+        .menuprice5 {
+            padding-left: 80px; 
+        }
+        .menuprice6 {
+            padding-left: 80px; 
+        }
+        .menu_price2 {
+            padding-bottom: 32px;
+            
+        }
+      
+        .section3 {
+            display: flex;
+        }
+        .h4 {
+            font-size: 40px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        .loc {
+        }
+        .street {
+            font-size: 16px;
+            margin-left: 5px;
+        }
+        .imgmap {
+            width: 20px;
+        }
+        .googlemaps {
+            padding-top: 40px;
+        }
+        .footer {
+            height: 86px;
+        }
+        .sakurafooterlogo {
+            width: 40px;
+            height: 40px;       
+         }
+         .tripadvisor {
+            width: 32px;
+            height: 32px;
+         }
+         .facebook {
+            width: 32px;
+            height: 32px;
+         }
+         .instagram {
+            width: 32px;
+            height: 32px;
+         }
+    }
+   
+    @media(max-width:367px) {
+        .plate1 {
+            width: 300px;
+            height: 300px;
+        }
+        .plate2 {
+            width: 300px;
+            height: 300px;
+        }
+
+
+    }
+   
+      
+        
+        
+
+    </style>
+</head>
+
+<body class="myBody">
+    <div class="container-header">
+
+        <div class="h1">
+            <h1 class="size1">SAKURA RAMEN</h1>
+        </div>
+        <p class="size2">THE BEST RAMEN IN TOWN</p>
+    </div>
+
+
+    <div class="navbar">
+        <img class="logo-sakura" src="./img/sakura_logo.png"><img>
+
+        <div class="nav-menu">
+            <a class="nav-item" href="#MENU">MENU</a>
+            <a class="nav-item" href="#LOCATIONS">LOCATIONS</a>
+            <a class="nav-item" href="./downloads/about.pdf" target="blank">ABOUT</a>
+
+            <div class="button">
+                <a class="number" href="tel:+43 676/7875304" target="_blank">
+                    <img class="phone-logo" src="./img/phone.png" />
+                    <span class="number1">0676/7875304</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="section2" style="padding-top: 120px 0;">
+        <h2 class="h2" style="margin: 0;">HOW TO ORDER</h2>
+        <div class="pics">
+            <div class="pic1">
+                <img class="img1" src="./img/noodle.svg"></img>
+                <p class="text1">Pick your<br>noodle</p>
+            </div>
+
+            <div class="pic2">
+                <img class="img2" src="./img/broth.png"></img>
+                <p class="text2">Pick your<br> broth</p>
+            </div>
+
+            <div class="pic3">
+                <img class="img3" src="./img/egg.png"></img>
+                <p class="text3">Add your<br> toppings</p>
+            </div>
+        </div>
+    </div>    
+        <div class="ourmenu">
+            <div class="h3">
+                <h3 style="margin-top: 0;">OUR MENU</h3>
+            </div>
+
+            <div class="menu1" id="MENU">
+                <img class="plate1" src="./img/R1.png"><img>
+
+                <div class="menu_price">
+                    <span class="text_menu1">Tonkotsu Ramen</span>
+                    <table class="table_menu1">
+                        <tr>
+                            <td>CHICKEN</td>
+                            <td class="menuprice1">11,95 €</td>
+                        </tr>
+
+                        <tr>
+                            <td>BEEF</td>
+                            <td class="menuprice2">12,95 €</td>
+                        </tr>
+                        <tr>
+                            <td>SHRIMP</td>
+                            <td class="menuprice3">13,95 €</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="menu_item">
+                <div class="menu2">
+                    <img class="plate2" src="./img/R2.png"><img>
+                </div>
+                <div class="menu_price2">
+                    <span class="text_menu2">Spicy Misu Ramen</span>
+                    <table class="table_menu1">
+                        <tr>
+                            <td>CHICKEN</td>
+                            <td class="menuprice4">11,95 €</td>
+                        </tr>
+
+                        <tr>
+                            <td>BEEF</td>
+                            <td class="menuprice5">12,95 €</td>
+                        </tr>
+                        <tr>
+                            <td>SHRIMP</td>
+                            <td class="menuprice6">13,95 €</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="menu1">
+                <img class="plate1" src="./img/R3.png"><img>
+
+                <div class="menu_price">
+                    <span class="text_menu1">Shio Ramen</span>
+                    <table class="table_menu1">
+                        <tr>
+                            <td>CHICKEN</td>
+                            <td class="menuprice1">11,95 €</td>
+                        </tr>
+
+                        <tr>
+                            <td>BEEF</td>
+                            <td class="menuprice2">12,95 €</td>
+                        </tr>
+                        <tr>
+                            <td>SHRIMP</td>
+                            <td class="menuprice3">13,95 €</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="section3" id="LOCATIONS">
+        <h4 class="h4">FIND US AT</h4>
+    </div>
+    </div>
+    <div class="loc">
+        <img class="imgmap" src="./img/map_marker.png">
+        <span class="street">Kapuzinerstraße 31, München, 80337</span>
+    </div>
+    </div>
+    <div class="googlemaps" id="LOCATIONS"><iframe class="fullmap"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d278.50164061090015!2d11.561253045028375!3d48.12542377933801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479ddf44cf7e4d5f%3A0x55a7bd29a73e9161!2sKapuzinerstra%C3%9Fe%2031%2C%2080337%20M%C3%BCnchen%2C%20Deutschland!5e1!3m2!1sde!2sat!4v1760024906544!5m2!1sde!2sat"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="footer">
+        <img class="sakurafooterlogo" src="./img/sakura_ramen_logo_and_text.png">
+        <img class="sakuralogoalone" src="./img/sakura_logo.png">
+
+        <div class="socialmedia">
+            <a href="https://www.tripadvisor.at" target="blank"><img class="tripadvisor"
+                    src="./img/tripadvisor_logo.png"></a>
+            <a href="https://www.facebook.com/fabian.glanzer" target="blank"><img class="facebook"
+                    src="./img/facebook_logo.png"></a>
+            <a href="https://www.instagram.com/fabs_889" target="blank"><img class="instagram"
+                    src="./img/instagrram_logo.png"></a>
+        </div>
+</body>
+
+</html>
